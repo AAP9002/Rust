@@ -62,6 +62,11 @@ fn takes_borrow(some_string: &String) { // notice the & to borrow
 }
 ```
 
+ASIDE:
+you can use pattern matching to borrow multiple values at once.
+```rust
+(x,y) = (&s1, &s2);
+```
 ## Basic Types and Mutability
 
 Basic types do not need to worry about ownership and borrowing.
